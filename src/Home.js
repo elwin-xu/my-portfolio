@@ -1,8 +1,8 @@
 function Home() {
   return (
     <div>
-      <h1>Hi. I'm Elwin Xu.</h1>
-      <h2>A Software Engineer.</h2>
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is the home page of my portfolio.</p>
     </div>
   );
 }
