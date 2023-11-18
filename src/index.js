@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Material Design
+import '@material/web/checkbox/checkbox.js'
+import '@material/web/button/text-button.js'
+import '@material/web/button/outlined-button.js'
+import '@material/web/textfield/outlined-text-field.js'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
