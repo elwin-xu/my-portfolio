@@ -1,5 +1,7 @@
 import React from 'react';
 import { Box, Typography, Grid, Card, CardMedia, CardContent, Container } from '@mui/material';
+import exampleImage1 from './images/IMG_0149.JPG';
+import exampleImage2 from './images/IMG_0117.JPG';
 
 function Home() {
   // Example array of projects, replace with your actual projects
@@ -7,12 +9,12 @@ function Home() {
     {
       title: 'Project 1',
       description: 'Description of Project 1',
-      imageUrl: '/images/IMG_0149.jpg',
+      imageUrl: exampleImage1,
     },
     {
       title: 'Project 2',
       description: 'Description of Project 2',
-      imageUrl: '/logo512.png',
+      imageUrl: exampleImage2,
     },
     // ... add more projects as needed
   ];
@@ -43,7 +45,7 @@ function Home() {
                 <CardMedia
                   component="img"
                   height="280"
-                  image={process.env.PUBLIC_URL + project.imageUrl}
+                  image={project.imageUrl}
                   alt={project.title}
                 />
                 <CardContent>
