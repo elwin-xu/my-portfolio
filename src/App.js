@@ -5,17 +5,20 @@ import About from './About';
 import Projects from './Projects';
 import Skills from './Skills';
 import Contact from './Contact';
+import { AppBar, Toolbar, Button } from '@mui/material';
 
 function App() {
   return (
     <Router basename="/">
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/skills">Skills</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+      <AppBar position="sticky">
+            <Toolbar sx={{ justifyContent: 'center', backgroundColor: '#123456' }}>
+                <Button color="inherit" component={Link} to="/">Home</Button>
+                <Button color="inherit" component={Link} to="/about">About</Button>
+                <Button color="inherit" component={Link} to="/projects">Projects</Button>
+                <Button color="inherit" component={Link} to="/skills">Skills</Button>
+                <Button color="inherit" component={Link} to="/contact">Contact</Button>
+            </Toolbar>
+        </AppBar>
 
       <Routes>
         <Route path="/" element={<Home />} />
